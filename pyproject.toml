@@ -1,0 +1,31 @@
+[project]
+name = "medical-chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "TanmoyMahanty", email = "tanmoymahanty90@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "certifi>=2026.10.23",
+    "fastapi>=0.163.0",
+    "httpx>=0.28.1",
+    "langchain>=1.5.0",
+    "langgraph>=1.2.22",
+    "openai>=3.51.0",
+    "pinecone>=10.3.0",
+    "pydantic>=2.14.3",
+    "pymupdf>=2.1",
+    "python-dotenv>=1.2.4",
+    "python-multipart>=0.0.33",
+    "tavily-python>=0.8.5",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+medical-chatbot = "medical_chatbot:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
