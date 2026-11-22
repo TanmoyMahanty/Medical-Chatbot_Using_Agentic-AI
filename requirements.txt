@@ -11,3 +11,6 @@ tavily-python
 pymupdf
 certifi
 httpx
+pydantic-settings
+sentence-transformers
+pymupdf
